@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/WelcomeFragment">
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.example.mylibrary.fragments.welcomeActivity.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome" >
+
+        <action
+            android:id="@+id/welcome_login"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@id/welcome_register"
+            app:destination="@id/RegisterFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.mylibrary.fragments.welcomeActivity.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/lagin_welcome"
+            app:destination="@id/WelcomeFragment" />
+        <action
+            android:id="@+id/login_register"
+            app:destination="@id/RegisterFragment"/>
+        <action
+            android:id="@+id/login_home"
+            app:destination="@+id/HomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.mylibrary.fragments.welcomeActivity.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/register_welcome"
+            app:destination="@id/WelcomeFragment" />
+        <action
+            android:id="@+id/register_login"
+            app:destination="@id/LoginFragment"/>
+        <action
+            android:id="@+id/profile"
+            app:destination="@id/ProfileFrgment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFrgment"
+        android:name="com.example.mylibrary.fragments.welcomeActivity.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/profile_home"
+            app:destination="@+id/HomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.HomeFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/home_editProfile"
+            app:destination="@id/EditProfileFragment"/>
+        <action
+            android:id="@+id/home_stats"
+            app:destination="@id/YourYearFragment"/>
+        <action
+            android:id="@+id/home_books"
+            app:destination="@id/BooksFragment"/>
+        <action
+            android:id="@+id/home_myBooks"
+            app:destination="@id/MyBooksFragment"/>
+        <action
+            android:id="@+id/home_map"
+            app:destination="@id/BooksAroundTheWorldFragment"/>
+        <action
+            android:id="@+id/home_welcome"
+            app:destination="@id/WelcomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/EditProfileFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.EditProfileFragment"
+        android:label="Edit profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/editProfile_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/editProfile_stat"
+            app:destination="@id/YourYearFragment"/>
+        <action
+            android:id="@+id/editProfile_myBooks"
+            app:destination="@id/MyBooksFragment"/>
+        <action
+            android:id="@+id/editProfile_BooksAroundTheWorld"
+            app:destination="@id/BooksAroundTheWorldFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/YourYearFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.YourYearFragment"
+        android:label="BooksAroundTheWorldFragment"
+        tools:layout="@layout/fragment_your_year">
+        <action
+            android:id="@+id/stats_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/stats_editProfile"
+            app:destination="@id/EditProfileFragment"/>
+        <action
+            android:id="@+id/stats_myBooks"
+            app:destination="@id/MyBooksFragment"/>
+        <action
+            android:id="@+id/stats_BooksAroundTheWorld"
+            app:destination="@id/BooksAroundTheWorldFragment"/>
+        <action
+            android:id="@+id/stats_BooksAndStars"
+            app:destination="@id/booksAndStarsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/MyBooksFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.MyBooksFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_my_books">
+        <action
+            android:id="@+id/myBooks_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/myBooks_editProfile"
+            app:destination="@id/EditProfileFragment"/>
+        <action
+            android:id="@+id/myBooks_stat"
+            app:destination="@id/YourYearFragment"/>
+        <action
+            android:id="@+id/myBooks_BooksAroundTheWorld"
+            app:destination="@id/BooksAroundTheWorldFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/BooksAroundTheWorldFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.BooksAroundTheWorldFragment"
+        android:label="BooksAroundTheWorldFragment"
+        tools:layout="@layout/fragment_books_around_the_world">
+        <action
+            android:id="@+id/booksAroundTheWorldFragment_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/booksAroundTheWorldFragment_editProfile"
+            app:destination="@id/EditProfileFragment"/>
+        <action
+            android:id="@+id/booksAroundTheWorldFragment_stat"
+            app:destination="@id/YourYearFragment"/>
+        <action
+            android:id="@+id/BooksAroundTheWorld_myBooks"
+            app:destination="@id/MyBooksFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/BooksFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.BooksFragment"
+        android:label="Books Fragment"
+        tools:layout="@layout/fragment_books">
+        <action
+            android:id="@+id/books_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/books_bookDetails"
+            app:destination="@+id/BookDetailsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/BookDetailsFragment"
+        android:name="com.example.mylibrary.fragments.bookDetailsActivity.BookDetailsFragment"
+        android:label="Book details"
+        tools:layout="@layout/fragment_book_details">
+        <action
+            android:id="@+id/bookDetails_home"
+            app:destination="@id/HomeFragment"/>
+        <action
+            android:id="@+id/bookDetails_authorDetails"
+            app:destination="@id/AuthorDetailsFragment"/>
+        <action
+            android:id="@+id/detailsBook_myBooks"
+            app:destination="@+id/MyBooksFragment"/>
+        <action
+            android:id="@+id/detailsBook_userProfile"
+            app:destination="@id/userProfile"/>
+    </fragment>
+    <fragment
+        android:id="@+id/readBookFragment"
+        android:name="com.example.mylibrary.fragments.bookDetailsActivity.ReadBookFragment"
+        android:label="fragment_read_book"
+        tools:layout="@layout/fragment_read_book">
+        <action
+            android:id="@+id/readBook_myBooks"
+            app:destination="@id/MyBooksFragment"/>
+        <action
+            android:id="@+id/readBook_bookDetails"
+            app:destination="@id/BookDetailsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/AuthorDetailsFragment"
+        android:name="com.example.mylibrary.fragments.bookDetailsActivity.AuthorDetailsFragment"
+        android:label="Author details"
+        tools:layout="@layout/fragment_author_details">
+        <action
+            android:id="@+id/books_home"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/booksAndStarsFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.BooksAndStarsFragment"
+        android:label="fragment_books_and_stars"
+        tools:layout="@layout/fragment_books_and_stars" >
+        <action
+            android:id="@+id/stats2_stats1"
+            app:destination="@id/YourYearFragment"/>
+        <action
+            android:id="@+id/stats2_stats3"
+            app:destination="@id/booksReadPerMonthFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/booksReadPerMonthFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.BooksReadPerMonthFragment"
+        android:label="fragment_books_read_per_month"
+        tools:layout="@layout/fragment_books_read_per_month" >
+        <action
+            android:id="@+id/stats3_stats2"
+            app:destination="@id/booksAndStarsFragment"/>
+        <action
+            android:id="@+id/stats3_stats4"
+            app:destination="@id/bookFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.BookFragment"
+        android:label="fragment_book"
+        tools:layout="@layout/fragment_book" >
+        <action
+            android:id="@+id/stats4_stats3"
+            app:destination="@id/booksReadPerMonthFragment"/>
+        <action
+            android:id="@+id/stats4_stats5"
+            app:destination="@id/genreFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.GenreFragment"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" >
+        <action
+            android:id="@+id/stats5_stats6"
+            app:destination="@id/categoryAndFormatBookFragment"/>
+        <action
+            android:id="@+id/stats5_stats4"
+            app:destination="@id/bookFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryAndFormatBookFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.CategoryAndFormatBookFragment"
+        android:label="fragment_category_and_format_book"
+        tools:layout="@layout/fragment_category_and_format_book" >
+        <action
+            android:id="@+id/stats6_stats5"
+            app:destination="@id/genreFragment"/>
+        <action
+            android:id="@+id/stats6_stats7"
+            app:destination="@id/publicationYearFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/publicationYearFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.PublicationYearFragment"
+        android:label="fragment_publication_year"
+        tools:layout="@layout/fragment_publication_year" >
+                <action
+                    android:id="@+id/stats7_stats6"
+                    app:destination="@id/categoryAndFormatBookFragment"/>
+                <action
+                    android:id="@+id/stats7_stats8"
+                    app:destination="@id/authorsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/authorsFragment"
+        android:name="com.example.mylibrary.fragments.mainActivity.stats.AuthorsFragment"
+        android:label="fragment_authors"
+        tools:layout="@layout/fragment_authors" >
+        <action
+            android:id="@+id/stats8_stats7"
+            app:destination="@id/publicationYearFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.mylibrary.fragments.bookDetailsActivity.UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile"
+        >
+        <action
+            android:id="@+id/userProfile_Home"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login"><font color="#FFFFFF"><b>Login</b></font></string>
+    <string name="username"><font color="#FFFFFF"><b>Username:</b></font></string>
+    <string name="password"><font color="#FFFFFF"><b>Password:</b></font></string>
+    <string name="entry_your_username"><font color="#83FFFFFF">Entry your username</font></string>
+    <string name="entry_your_password"><font color="#83FFFFFF">Entry your password</font></string>
+    <string name="name"><font color="#FFFFFF"><b>Name:</b></font></string>
+    <string name="entry_your_name"><font color="#83FFFFFF">Entry your name</font></string>
+    <string name="confirm_your_password"><font color="#83FFFFFF">Confirm your password</font></string>
+    <string name="register">Register</string>
+    <string name="new_user">New user?</string>
+    <string name="confirm_password"><b>Confirm password:</b></string>
+    <string name="my_library">My Library</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="save_profile">Save profile</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="stats">Stats</string>
+    <string name="books">Books</string>
+    <string name="logout">Logout</string>
+    <string name="pages"> pages</string>
+    <string name="searchHint">Title, author, series\'s name</string>
+    <string name="title_activity_details2">DetailsActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search">Search</string>
+    <string name="my_books">My books</string>
+    <string name="cancel">cancel</string>
+    <string name="starting_reading_on">Starting reading on:</string>
+    <string name="finished_reading_on">Finished reading on:</string>
+
+
+    <string name="warning">You don\'t have books read for the given year, change the year or go to the book search page.</string>
+    <string name="invalid_year">Invalid year</string>
+    <string name="future">Are you a traveler in the future?</string>
+    <string name="regex_year">^20[0-9][0-9]$</string>
+    <string name="books_read">books read:&#160;</string>
+    <string name="avg_books">average books:&#160;</string>
+    <string name="avg_stars">average stars:&#160;</string>
+    <string name="pages_read">pages read:&#160;</string>
+    <string name="avg_pages">average pages:&#160;</string>
+    <string name="books_around_the_world">Books around the world</string>
+    <string name="set_year">Set year: </string>
+    <string name="account_invalid"><font color="#9E0000">Account invalid…</font></string>
+    <string name="error_400"><font color="#9E0000">400 Bad Request:&#160;</font></string>
+    <string name="error_401"><font color="#9E0000">401 Unauthorized: Your session has expired,log out and log in again.</font></string>
+    <string name="error_409"><font color="#9E0000">409 Conflict:&#160;</font></string>
+    <string name="error_500"><font color="#9E0000">500 Server error:&#160;</font></string>
+    <string name="error_server"><font color="#9E0000">Sorry! Server unavailable:((</font></string>
+    <string name="timeout"><font color="#9E0000">Sorry! timeout, try again</font></string>
+    <string name="year_invalid"><font color="#9E0000">The year entered is incorrect</font></string>
+    <string name="error_404"><font color="#9E0000">404 Not Found:&#160;</font></string>
+    <string name="call_fail"><font color="#9E0000">Call fail:&#160;</font></string>
+    <string name="object_null"><font color="#9E0000">Call fail object null</font></string>
+    <string name="booksAndStart">&#160;books&#160;</string>
+    <string name="book_not_find">Couldn\'t find any books for&#160;</string>
+    <string name="missing_start_date">Complete when you start reading the book</string>
+    <string name="missing_end_date">Complete when you finish reading the book</string>
+    <string name="end_befor_start">Did you finish the book before you started?</string>
+    <string name="must_ranting">Give the book a rating</string>
+    <string name="must_format">You have to choose the format of the book</string>
+    <string name="book_read">This book is already read, the changes made will only update the data.</string>
+
+</resources>
